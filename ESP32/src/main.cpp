@@ -7,15 +7,13 @@
 #include <ArduinoJson.hpp>
 #include <PubSubClient.h>
 
-#define SeaLevelPreasure_HPA (1013.25)
-
 void reconnect();
 
 Adafruit_BME280 bme; // I2C
 
 const char* ssid = "Oshadha's Galaxy Tab S6 Lite";
 const char* password = "bxmu1409";
-const char* mqtt_server = "xxxx";
+const char* mqtt_server = "192.168.232.149";
 
 long lastMsg = 0;
 
@@ -88,7 +86,7 @@ void loop() {
 
     // Print the JSON document
     Serial.println(output);
-    client.publish("/home/sensors", output);
+    client.publish("/home/sensor", output);
   }
     
 }
