@@ -13,7 +13,7 @@ Adafruit_BME280 bme; // I2C
 
 const char* ssid = "Oshadha's Galaxy Tab S6 Lite";
 const char* password = "bxmu1409";
-const char* mqtt_server = "192.168.232.149";
+const char* mqtt_server = "192.168.155.149";
 
 long lastMsg = 0;
 
